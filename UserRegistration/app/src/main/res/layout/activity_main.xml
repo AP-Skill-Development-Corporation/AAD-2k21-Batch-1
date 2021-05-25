@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:orientation="vertical"
+<layout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    >
+
+<LinearLayout
+    android:orientation="vertical"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    >
 
     <TextView
         android:layout_width="wrap_content"
@@ -108,6 +113,26 @@
         </LinearLayout>
 
 
-    </LinearLayout>
 
+    </LinearLayout>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/spinnerStates"
+        android:entries="@array/states"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_address"
+        android:maxLines="10"
+        android:layout_margin="5dp"
+        android:minLines="3"/>
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:src="@drawable/apssdc_final"
+        />
 </LinearLayout>
+</layout>

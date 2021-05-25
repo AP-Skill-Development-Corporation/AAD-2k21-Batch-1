@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">UserRegistration</string>
+<string-array name="states">
+    <item>Select State</item>
+    <item>Andhra Pradesh</item>
+    <item>Telangana</item>
+    <item>New Delhi</item>
+    <item>Tamil nadu</item>
+    <item>Karnataka</item>
+    <item>Kerala</item>
+    <item>Jammu Kasmir</item>
+    <item>Maharasthra</item>
+</string-array>
 </resources>

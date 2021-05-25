@@ -18,11 +18,12 @@ RatingBar mRating;
 SeekBar mSeekBar;
 TextView tv_label;
 Switch mSwitch;
+/*11 components */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        /*connect ID's here*/
+        /*connect ID's here*//*11 ids*/
         et_uname=findViewById(R.id.et_username);
         et_mobile=findViewById(R.id.mobile);
         mRating=findViewById(R.id.rb);
