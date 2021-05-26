@@ -11,4 +11,15 @@
     <item>Jammu Kasmir</item>
     <item>Maharasthra</item>
 </string-array>
+    <string-array name="district">
+        <item>kadapa</item>
+        <item>Chittor</item>
+        <item>Annathapur</item>
+        <item>Kurnool</item>
+        <item>Guntur</item>
+        <item>Krishna</item>
+        <item>Visakapatnam</item>
+        <item>Prakasam</item>
+        <item>Srikakulam</item>
+    </string-array>
 </resources>

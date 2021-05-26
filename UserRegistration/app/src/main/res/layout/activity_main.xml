@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity"
     >
-
+<!--I'm Audiable?
+okay..i will rejoin -->
 <LinearLayout
     android:orientation="vertical"
 
@@ -129,9 +130,24 @@
         android:maxLines="10"
         android:layout_margin="5dp"
         android:minLines="3"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:id="@+id/submitButton"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="show the data"
+        android:textColor="#000"
+        android:id="@+id/tv"
+        android:layout_margin="10dp"
+        />
     <ImageView
-        android:layout_width="400dp"
-        android:layout_height="400dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:id="@+id/img"
         android:src="@drawable/apssdc_final"
         />
 </LinearLayout>
