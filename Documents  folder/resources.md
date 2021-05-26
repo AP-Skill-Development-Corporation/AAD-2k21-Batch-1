@@ -8,3 +8,7 @@
 
 ### [25th May 2021 Class Video Link](https://transcripts.gotomeeting.com/#/s/e8684890a27238ceab4faff550618a523eb90ba2b56e7be107581ced2dfd7a7b)
 * UI Components topic --> User Registration page InputTextLayout,EditText,Spinner,Radio Group,Radio button,Check box,ImageView ,Drawable resoures,Mipmap  explained 
+
+* ### [26th May 2021 Class Video Link](https://transcripts.gotomeeting.com/#/s/aad36225097436596d6581350fadca2285bad2541dc54ed6f92522d2862cef0e)
+* UI Components topic --> Added Latest Android Jetpack Library DATABINDING for eliminatinf FindviewByid on User Registration page InputTextLayout,EditText,Spinner,Radio Group,Radio button,Check box,ImageView ,Drawable resoures,Mipmap  explained 
+* Also added the Menu Directory and Menu resources file and Menu Items 
