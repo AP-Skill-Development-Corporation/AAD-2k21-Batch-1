@@ -1,10 +1,12 @@
 package com.example.userregistration;
 
+import android.app.DatePickerDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.DatePicker;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -15,10 +17,13 @@ import androidx.databinding.DataBindingUtil;
 import com.example.userregistration.databinding.ActivityMainBinding;
 import com.google.android.material.snackbar.Snackbar;
 
+import java.util.Calendar;
+
 public class MainActivity extends AppCompatActivity {
     ActivityMainBinding binding;
     String gender;
     String knownCourse;
+    int date,month,year,min,hours;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -108,6 +113,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showDate() {
+        Calendar c=Calendar.getInstance();
+        date=c.get(Calendar.DAY_OF_MONTH);
+        month=c.get(Calendar.MONTH);
+        year=c.get(Calendar.YEAR);
+        DatePickerDialog dialog=new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker datePicker, int i, int i1, int i2) {
+                /*12 months
+                array->0-11
+                * */
+                String date=i+"-"+(i1+1)+"-"+i2;
+                binding.tv.setText(date);
+            }
+        },year,month,date);
+        dialog.show();
+
     }
 
     private void showAlertDialog() {
