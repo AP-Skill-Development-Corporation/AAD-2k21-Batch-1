@@ -1,5 +1,6 @@
 package com.example.userregistration;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -7,6 +8,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
@@ -109,6 +111,27 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showAlertDialog() {
-        /*Alert Dilog Creation*/
+        /*Alert Dilog Creation
+        * title
+        * message
+        * icon
+        * positive button and negitive
+        * ..etc*/
+        AlertDialog.Builder builder=new AlertDialog.Builder(this);
+        builder.setTitle("Alert..!");
+        builder.setMessage("Do you want close app..?");
+        builder.setIcon(R.drawable.ic_baseline_warning_24);
+        builder.setCancelable(false);
+        builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.cancel();
+            }
+        });
+
+        builder.show();
+
+
+
     }
 }
