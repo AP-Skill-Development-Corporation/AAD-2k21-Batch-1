@@ -12,3 +12,8 @@
 ### [26th May 2021 Class Video Link](https://transcripts.gotomeeting.com/#/s/aad36225097436596d6581350fadca2285bad2541dc54ed6f92522d2862cef0e)
 * UI Components topic --> Added Latest Android Jetpack Library DATABINDING for eliminatinf FindviewByid on User Registration page InputTextLayout,EditText,Spinner,Radio Group,Radio button,Check box,ImageView ,Drawable resoures,Mipmap  explained 
 * Also added the Menu Directory and Menu resources file and Menu Items 
+### [27th May 2021 Class Video Link](https://transcripts.gotomeeting.com/#/s/7be8413633834880103b1f0d337c53b4dec4724148c09d9b8385a48e9391dc5c)
+* UI Components topic --> added the Menu Directory and Menu resources file and Menu Items onlick item
+* Date Picker, Time picker ,Alert Dialog 
+
+
