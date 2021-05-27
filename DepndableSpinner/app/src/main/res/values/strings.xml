@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">DepndableSpinner</string>
+    <string-array name="array1">
+        <item>mobile</item>
+        <item>motor</item>
+    </string-array>
+    <string-array name="mobile_array">
+        <item>Android</item>
+        <item>blackberry</item>
+        <item>apple</item>
+    </string-array>
+    <string-array name="motor_array">
+        <item>Audi</item>
+        <item>BMW</item>
+        <item>unicorn</item>
+    </string-array>
+</resources>
