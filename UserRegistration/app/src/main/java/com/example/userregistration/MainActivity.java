@@ -1,12 +1,14 @@
 package com.example.userregistration;
 
 import android.app.DatePickerDialog;
+import android.app.TimePickerDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.DatePicker;
+import android.widget.TimePicker;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -110,6 +112,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showTime() {
+        Calendar c=Calendar.getInstance();
+        min=c.get(Calendar.MINUTE);
+        hours=c.get(Calendar.HOUR);
+        TimePickerDialog dialog=new TimePickerDialog(this, new TimePickerDialog.OnTimeSetListener() {
+            @Override
+            public void onTimeSet(TimePicker timePicker, int i, int i1) {
+               String time=i+"-"+i1;
+               binding.tv.setText(time);
+            }
+        },hours,min,false);
+        dialog.show();
+
     }
 
     private void showDate() {
