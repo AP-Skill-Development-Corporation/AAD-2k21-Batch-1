@@ -7,6 +7,9 @@
     >
 <!--I'm Audiable?
 okay..i will rejoin -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 <LinearLayout
     android:orientation="vertical"
 
@@ -151,4 +154,5 @@ okay..i will rejoin -->
         android:src="@drawable/apssdc_final"
         />
 </LinearLayout>
+    </ScrollView>
 </layout>

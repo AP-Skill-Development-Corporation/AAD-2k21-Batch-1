@@ -9,5 +9,7 @@
     <item android:title="Alert Dialog"
         android:id="@+id/alert"/>
     <item android:title="Search"
-        android:id="@+id/search"/>
+        android:id="@+id/search"
+        android:icon="@drawable/ic_baseline_search_24"
+        app:showAsAction="always"/>
 </menu>
