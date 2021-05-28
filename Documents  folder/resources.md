@@ -14,6 +14,11 @@
 * Also added the Menu Directory and Menu resources file and Menu Items 
 ### [27th May 2021 Class Video Link](https://transcripts.gotomeeting.com/#/s/7be8413633834880103b1f0d337c53b4dec4724148c09d9b8385a48e9391dc5c)
 * UI Components topic --> added the Menu Directory and Menu resources file and Menu Items onlick item
-* Date Picker, Time picker ,Alert Dialog 
+* Date Picker, Time picker ,Alert Dialog
+### [28th May 2021 Class Video Link](https://transcripts.gotomeeting.com/#/s/3c197b15a943ed573c33cbdac697f830d96ac7fd582138dd2a089fbed073e791)
+* UI Components topic --> Tab navigation with 3 fragments added
+* And **RecyclerView** Component added 
+
+
 
 
