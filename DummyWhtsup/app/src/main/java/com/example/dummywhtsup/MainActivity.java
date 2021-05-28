@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -23,6 +24,25 @@ ViewPager viewPage;
         viewPage=findViewById(R.id.myViewPager);
         viewPage.setAdapter(new MyFragementPagerAdapter(getSupportFragmentManager()));
         tab.setupWithViewPager(viewPage);
+        tab.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                Toast.makeText(MainActivity.this, "TabSelected "+tab.getText().toString(), Toast.LENGTH_SHORT).show();
+
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+                Toast.makeText(MainActivity.this, "UnSelected "+tab.getText().toString(), Toast.LENGTH_SHORT).show();
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+                Toast.makeText(MainActivity.this, "ReSelected "+tab.getText().toString(), Toast.LENGTH_SHORT).show();
+
+            }
+        });
     }
     public class MyFragementPagerAdapter extends FragmentPagerAdapter{
         String titles[]={"Chats","Status","Calls"};
