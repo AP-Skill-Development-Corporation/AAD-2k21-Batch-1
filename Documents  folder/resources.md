@@ -18,6 +18,10 @@
 ### [28th May 2021 Class Video Link](https://transcripts.gotomeeting.com/#/s/3c197b15a943ed573c33cbdac697f830d96ac7fd582138dd2a089fbed073e791)
 * UI Components topic --> Tab navigation with 3 fragments added
 * And **RecyclerView** Component added 
+### [29th May 2021 Class Video Link](https://transcripts.gotomeeting.com/#/s/3382135e68e78049701f6a2aab2f487d22e1a353b8c723997e2eecf3d943c242)
+*  **RecyclerView** Component and with Item Click performing at adapter
+
+
 
 
 
