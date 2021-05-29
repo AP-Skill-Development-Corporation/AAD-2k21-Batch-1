@@ -3,11 +3,14 @@ package com.example.dummywhtsup;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.dummywhtsup.contacts.MyAdapter;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -19,6 +22,7 @@ RecyclerView rec;
 int images[];
 String contact_names[];
 String contactNumbers[];
+MyAdapter adapter;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -82,6 +86,9 @@ String contactNumbers[];
                 R.drawable.f,
                 R.drawable.succ,
         };
+        adapter=new MyAdapter(getActivity(),images,contact_names,contactNumbers);
+        rec.setLayoutManager(new LinearLayoutManager(getContext()));
+        rec.setAdapter(adapter);
         return v;
     }
 }
