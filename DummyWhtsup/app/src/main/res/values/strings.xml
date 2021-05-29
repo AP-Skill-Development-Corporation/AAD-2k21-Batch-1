@@ -2,21 +2,21 @@
     <string name="app_name">DummyWhtsup</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-<string-array name="names">
-    <item>Nagarjuna</item>
-    <item>Balakrisha</item>
-    <item>Mega Star</item>
-    <item>Chaithu</item>
-    <item>Samantha</item>
-    <item>Allu arjun</item>
-    <item>Mahesh babu</item>
-    <item>Nani</item>
-    <item>Kruthika</item>
-    <item>Pawan kalyan</item>
-    <item>Prabash</item>
-    <item>Sudheer</item>
-    <item>Brami Ji</item>
-</string-array>
+    <string-array name="names">
+        <item>Nagarjuna</item>
+        <item>Balakrisha</item>
+        <item>Mega Star</item>
+        <item>Chaithu</item>
+        <item>Samantha</item>
+        <item>Allu arjun</item>
+        <item>Mahesh babu</item>
+        <item>Nani</item>
+        <item>Kruthika</item>
+        <item>Pawan kalyan</item>
+        <item>Prabash</item>
+        <item>Sudheer</item>
+        <item>Brami Ji</item>
+    </string-array>
     <string-array name="numbers">
         <item>658367876</item>
         <item>9834588389</item>

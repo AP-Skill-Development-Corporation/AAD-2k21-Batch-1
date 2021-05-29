@@ -1,6 +1,7 @@
 package com.example.dummywhtsup.contacts;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,6 +39,22 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     holder.myName.setText(titles[position]);
     holder.myNumber.setText(number[position]);
     holder.myImage.setImageResource(images[position]);
+    holder.myImage.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            String cName=titles[position];
+            String cNumber=number[position];
+            Intent i=new Intent(ctx,DetailesActivity.class);
+                /*implict-->out side app screen
+                    * explicit-->with in app screen */
+            i.putExtra("key_name",cName);
+            i.putExtra("key_number",cNumber);
+            ctx.startActivity(i);
+
+
+
+        }
+    });
     }
 
     @Override
