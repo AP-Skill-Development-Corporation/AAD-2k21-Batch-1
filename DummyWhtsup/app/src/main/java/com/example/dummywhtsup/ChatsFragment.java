@@ -16,6 +16,9 @@ import android.view.ViewGroup;
  */
 public class ChatsFragment extends Fragment {
 RecyclerView rec;
+int images[];
+String contact_names[];
+String contactNumbers[];
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -62,8 +65,23 @@ RecyclerView rec;
         // Inflate the layout for this fragment
         View v= inflater.inflate(R.layout.fragment_chats, container, false);
         rec=v.findViewById(R.id.recycler);
-
-
+        contact_names=getResources().getStringArray(R.array.names);
+        contactNumbers=getResources().getStringArray(R.array.numbers);
+        images=new int[]{
+                R.drawable.apssdc_final,
+                R.drawable.apssdc_logo,
+                R.drawable.f,
+                R.drawable.twitter,
+                R.drawable.g_siginin,
+                R.drawable.kotlin_vs_java,
+                R.drawable.succ,
+                R.drawable.ic_launcher_foreground,
+                R.drawable.ic_launcher_background,
+                R.mipmap.ic_launcher,
+                R.mipmap.ic_launcher_round,
+                R.drawable.f,
+                R.drawable.succ,
+        };
         return v;
     }
 }

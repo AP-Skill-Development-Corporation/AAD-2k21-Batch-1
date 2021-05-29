@@ -35,7 +35,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-
+    holder.myName.setText(titles[position]);
+    holder.myNumber.setText(number[position]);
+    holder.myImage.setImageResource(images[position]);
     }
 
     @Override

@@ -2,4 +2,34 @@
     <string name="app_name">DummyWhtsup</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+<string-array name="names">
+    <item>Nagarjuna</item>
+    <item>Balakrisha</item>
+    <item>Mega Star</item>
+    <item>Chaithu</item>
+    <item>Samantha</item>
+    <item>Allu arjun</item>
+    <item>Mahesh babu</item>
+    <item>Nani</item>
+    <item>Kruthika</item>
+    <item>Pawan kalyan</item>
+    <item>Prabash</item>
+    <item>Sudheer</item>
+    <item>Brami Ji</item>
+</string-array>
+    <string-array name="numbers">
+        <item>658367876</item>
+        <item>9834588389</item>
+        <item>9384848757</item>
+        <item>49357847</item>
+        <item>48658365</item>
+        <item>347394879</item>
+        <item>3945789734</item>
+        <item>45937787935</item>
+        <item>3477374973</item>
+        <item>3459793759</item>
+        <item>3459859044</item>
+        <item>4579797543</item>
+        <item>9878456368</item>
+    </string-array>
 </resources>
