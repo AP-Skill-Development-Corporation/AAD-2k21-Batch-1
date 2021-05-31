@@ -20,6 +20,9 @@
 * And **RecyclerView** Component added 
 ### [29th May 2021 Class Video Link](https://transcripts.gotomeeting.com/#/s/3382135e68e78049701f6a2aab2f487d22e1a353b8c723997e2eecf3d943c242)
 *  **RecyclerView** Component and with Item Click performing at adapter
+### [29th May 2021 Class Video Link](https://transcripts.gotomeeting.com/#/s/39137d1016b2e4b09953e34045715283e5f799b0a77408c80a3665295e7f489a)
+*  **Retrofit Background Service** Covid19 Reports
+
 
 
 
