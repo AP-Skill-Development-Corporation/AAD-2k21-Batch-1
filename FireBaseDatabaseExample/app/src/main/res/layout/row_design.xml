@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#FFEB3B"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Employee Directory..!"
+        android:textSize="30sp"
+        android:layout_margin="10dp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Employee Name..!"
+        android:textSize="30sp"
+        android:textColor="#E91E63"
+        android:id="@+id/tv_empname"
+        android:layout_margin="10dp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Employee Id..!"
+        android:textSize="30sp"
+        android:textColor="#3F51B5"
+        android:id="@+id/tv_empId"
+        android:layout_margin="10dp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Employee Salary..!"
+        android:textSize="30sp"
+        android:textColor="#4CAF50"
+        android:id="@+id/tv_empsalaray"
+        android:layout_margin="10dp"
+        android:gravity="center"/>
+</LinearLayout>

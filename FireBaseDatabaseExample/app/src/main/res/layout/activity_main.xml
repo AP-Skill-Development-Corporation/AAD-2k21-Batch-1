@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Firebase DataBase..!"
+        android:layout_margin="10dp"
+        android:textColor="#FF5722"
+        android:textSize="40sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/empname"
+        android:hint="Enter the Emp name"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/empId"
+        android:hint="Enter the Emp Id"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/empSalaray"
+        android:hint="Enter the emp salary"
+        android:layout_margin="10dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:layout_margin="10dp"
+        android:onClick="saveDatatoFirebase"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="retrive"
+        android:layout_margin="10dp"
+        android:onClick="retriveDatatoFirebase"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="loginEvente"
+        android:text="login" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" />
+
+</LinearLayout>
