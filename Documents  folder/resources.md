@@ -27,6 +27,9 @@
 ### [01st Jun 2021 Class Video Link](https://transcripts.gotomeeting.com/#/s/e380cd9b4638b4da377a7efb02ea15988a8c9f48920c16776e55181df8f40aac)
 *  **Retrofit Background Service** Covid19 Reports final 
 
+### [02st Jun 2021 Class Video Link](https://transcripts.gotomeeting.com/#/s/ea15fa1658e849be1859cb490a34aeb46ebbb60a52d331e4302dd2b93a050d82)
+*  Broadcast receivers and service
+
 
 
 
