@@ -14,6 +14,7 @@ public class StudentEntity {
     @ColumnInfo(name = "rollnumber")
     String rollnumber;
 /*right click->generete->getters and setters->select all*/
+
     @NonNull
     public String getName() {
         return name;
