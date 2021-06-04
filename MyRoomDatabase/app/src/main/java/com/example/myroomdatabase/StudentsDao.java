@@ -20,5 +20,5 @@ public interface StudentsDao {
     public void update(StudentEntity entity);
 
     @Query("select * from workshop")
-    public List<StudentEntity> retrive(StudentEntity entity);
+    public List<StudentEntity> retrive();
 }

@@ -6,12 +6,13 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "workshop")
-public class StudentEntity {
-    @NonNull
+public class StudentEntity   {
     @ColumnInfo(name = "name")
     String name;
+
     @PrimaryKey
-    @ColumnInfo(name = "rollnumber")
+    @ColumnInfo(name = "roll")
+            @NonNull
     String rollnumber;
 /*right click->generete->getters and setters->select all*/
 
