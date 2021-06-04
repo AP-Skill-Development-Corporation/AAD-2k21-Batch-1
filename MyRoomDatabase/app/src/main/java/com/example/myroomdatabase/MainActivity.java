@@ -6,14 +6,21 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.room.Room;
 
+
 import com.example.myroomdatabase.databinding.ActivityMainBinding;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     ActivityMainBinding binding;
     StudentDataBase dataBase;
     StudentEntity entity;
+    List<StudentEntity> list;
+    StudentAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,5 +42,11 @@ binding.etRollnumber.setText("");
     }
 
     public void retriveData(View view) {
+
+     list=dataBase.studentsDao().retrive();
+        Toast.makeText(this, "total "+list.size(), Toast.LENGTH_SHORT).show();
+        adapter=new StudentAdapter(this,list);
+        binding.recycler.setLayoutManager(new LinearLayoutManager(this));
+        binding.recycler.setAdapter(adapter);
     }
 }
