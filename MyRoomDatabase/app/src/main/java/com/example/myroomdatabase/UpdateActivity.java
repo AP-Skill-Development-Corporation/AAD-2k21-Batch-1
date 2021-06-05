@@ -31,10 +31,11 @@ public class UpdateActivity extends AppCompatActivity {
         entity = new StudentEntity();
         entity.setName(updateBinding.etStudentNameUpdate.getText().toString());
         entity.setRollnumber(updateBinding.etRollnumberUpdate.getText().toString());
-        MainActivity.dataBase.studentsDao().update(entity);
+        // MainActivity.dataBase.studentsDao().update(entity);
+        MainActivity.model.studentRepo.update(entity);
         Toast.makeText(this, "updated " +
                 updateBinding.etStudentNameUpdate.getText().toString(), Toast.LENGTH_SHORT).show();
-    Intent intent=new Intent(this,MainActivity.class) ;
-    startActivity(intent);
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }

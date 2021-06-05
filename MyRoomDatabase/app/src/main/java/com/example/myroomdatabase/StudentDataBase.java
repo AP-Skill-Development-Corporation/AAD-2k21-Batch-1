@@ -12,7 +12,7 @@ public abstract class StudentDataBase extends RoomDatabase {
 //for Live DB
     public static synchronized StudentDataBase getDataBase(Context context) {
     if (dataBase==null){
-        dataBase= Room.databaseBuilder(context,StudentDataBase.class,"workshop")
+        dataBase= Room.databaseBuilder(context,StudentDataBase.class,"aad")
                 .allowMainThreadQueries()
                 .build();
     }
