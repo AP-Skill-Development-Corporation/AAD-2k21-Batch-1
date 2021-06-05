@@ -1,5 +1,6 @@
 package com.example.myroomdatabase;
 
+import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
@@ -20,5 +21,6 @@ public interface StudentsDao {
     public void update(StudentEntity entity);
 
     @Query("select * from workshop")
-    public List<StudentEntity> retrive();
+   // public List<StudentEntity> retrive();//for narmal db
+    public LiveData<List<StudentEntity>> retrive();//with live data
 }

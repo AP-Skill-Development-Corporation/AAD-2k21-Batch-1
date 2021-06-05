@@ -24,6 +24,7 @@ public class UpdateActivity extends AppCompatActivity {
         String r = i.getStringExtra("k2");
         updateBinding.etStudentNameUpdate.setText(n);
         updateBinding.etRollnumberUpdate.setText(r);
+
     }
 
     public void updateData(View view) {
@@ -33,5 +34,7 @@ public class UpdateActivity extends AppCompatActivity {
         MainActivity.dataBase.studentsDao().update(entity);
         Toast.makeText(this, "updated " +
                 updateBinding.etStudentNameUpdate.getText().toString(), Toast.LENGTH_SHORT).show();
+    Intent intent=new Intent(this,MainActivity.class) ;
+    startActivity(intent);
     }
 }

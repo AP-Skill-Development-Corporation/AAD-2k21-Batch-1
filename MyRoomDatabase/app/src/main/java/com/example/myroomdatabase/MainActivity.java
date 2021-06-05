@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     public void saveData(View view) {
         entity = new StudentEntity();
         entity.setName(binding.etStudentName.getText().toString());
+
         entity.setRollnumber(binding.etRollnumber.getText().toString());
         dataBase.studentsDao().insert(entity);
         Toast.makeText(this, "success "+
