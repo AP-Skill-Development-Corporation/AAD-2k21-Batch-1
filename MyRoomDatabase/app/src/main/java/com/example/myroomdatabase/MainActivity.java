@@ -17,7 +17,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     ActivityMainBinding binding;
-    StudentDataBase dataBase;
+    static StudentDataBase dataBase;
     StudentEntity entity;
     List<StudentEntity> list;
     StudentAdapter adapter;

@@ -1,10 +1,12 @@
 package com.example.myroomdatabase;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -35,6 +37,9 @@ holder.tv_delete.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
         //for delete we will come soon
+        String name= list.get(position).getName();
+        MainActivity.dataBase.studentsDao().delete(list.get(position));
+        Toast.makeText(ct, "deleted "+name, Toast.LENGTH_SHORT).show();
     }
 });
 
@@ -53,6 +58,17 @@ holder.tv_delete.setOnClickListener(new View.OnClickListener() {
             tv_delete=itemView.findViewById(R.id.delete);
             tv_name=itemView.findViewById(R.id.name);
             tv_roll=itemView.findViewById(R.id.rollnumber);
+            tv_edit.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    String myName=tv_name.getText().toString();
+                    String myroll=tv_roll.getText().toString();
+                    Intent i=new Intent(ct,UpdateActivity.class);
+                    i.putExtra("k1",myName);
+                    i.putExtra("k2",myroll);
+                    ct.startActivity(i);
+                }
+            });
         }
     }
 }
