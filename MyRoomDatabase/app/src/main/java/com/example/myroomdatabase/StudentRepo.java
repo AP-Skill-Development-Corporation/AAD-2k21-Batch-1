@@ -43,5 +43,17 @@ public class AsynckTaskForDelete extends AsyncTask<StudentEntity,Void,Void>{
         return null;
     }
 }
+public void insert(StudentEntity studentEntity){
+     new AsynckTaskForInsert().execute(studentEntity);
+
+}
+    public void update(StudentEntity studentEntity){
+        new AsynckTaskForUpdate().execute(studentEntity);
+
+    }
+    public void delete(StudentEntity studentEntity){
+        new AsynckTaskForDelete().execute(studentEntity);
+
+    }
 
 }
