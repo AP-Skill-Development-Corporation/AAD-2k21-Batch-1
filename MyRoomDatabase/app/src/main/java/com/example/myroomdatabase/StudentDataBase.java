@@ -9,7 +9,7 @@ import androidx.room.RoomDatabase;
 @Database(entities = StudentEntity.class, version = 1, exportSchema = false)
 public abstract class StudentDataBase extends RoomDatabase {
     public static StudentDataBase dataBase;
-
+//for Live DB
     public static synchronized StudentDataBase getDataBase(Context context) {
     if (dataBase==null){
         dataBase= Room.databaseBuilder(context,StudentDataBase.class,"workshop")
