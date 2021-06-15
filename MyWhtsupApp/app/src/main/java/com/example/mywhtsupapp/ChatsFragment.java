@@ -1,13 +1,13 @@
 package com.example.mywhtsupapp;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -15,15 +15,14 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class ChatsFragment extends Fragment {
-    String contactNames[];
-    String contactNumbers[];
-    int contactPictures[];
-RecyclerView rec;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-
+    String contactNames[];
+    String contactNumbers[];
+    int contactPictures[];
+    RecyclerView rec;
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
@@ -63,22 +62,26 @@ RecyclerView rec;
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v= inflater.inflate(R.layout.fragment_chats, container, false);
-   rec=v.findViewById(R.id.recyler);
-    contactNames=getResources().getStringArray(R.array.contact_names);
-    contactNumbers=getResources().getStringArray(R.array.contact_Number);
-contactPictures=new int[]{
-        R.drawable.ic_launcher_foreground,
-        R.drawable.ic_launcher_background,
-        R.drawable.ic_launcher_foreground,
-        R.drawable.ic_launcher_background,
-        R.drawable.ic_launcher_foreground,
-        R.drawable.ic_launcher_background,
-        R.drawable.ic_launcher_foreground,
-        R.drawable.ic_launcher_background,
-        R.drawable.ic_launcher_foreground,
-        R.drawable.ic_launcher_background,
-};
-    return v;
+        View v = inflater.inflate(R.layout.fragment_chats, container, false);
+        rec = v.findViewById(R.id.recyler);
+        contactNames = getResources().getStringArray(R.array.contact_names);
+        contactNumbers = getResources().getStringArray(R.array.contact_Number);
+        contactPictures = new int[]{
+                R.drawable.ic_launcher_foreground,
+                R.drawable.ic_launcher_background,
+                R.drawable.ic_launcher_foreground,
+                R.drawable.ic_launcher_background,
+                R.drawable.ic_launcher_foreground,
+                R.drawable.ic_launcher_background,
+                R.drawable.ic_launcher_foreground,
+                R.drawable.ic_launcher_background,
+                R.drawable.ic_launcher_foreground,
+                R.drawable.ic_launcher_background,
+        };
+        ContactsAdapter adapter=new ContactsAdapter(getContext(),contactNames,
+                contactNumbers,contactPictures);
+        rec.setLayoutManager(new LinearLayoutManager(getContext()));
+        rec.setAdapter(adapter);
+        return v;
     }
 }
